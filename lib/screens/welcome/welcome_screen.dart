@@ -15,15 +15,15 @@ class WelcomeScreen extends StatelessWidget {
                 height: 200,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Text(
-                "Start or join a video meeting",
-                style: Theme.of(context)
-                    .textTheme
-                    .headline6!
-                    .copyWith(fontWeight: FontWeight.bold),
-              ),
+            SizedBox(
+              height: 50,
+            ),
+            Text(
+              "Start or join a video meeting",
+              style: Theme.of(context)
+                  .textTheme
+                  .headline6!
+                  .copyWith(fontWeight: FontWeight.bold),
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
