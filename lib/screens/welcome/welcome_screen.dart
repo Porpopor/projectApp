@@ -8,53 +8,66 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(50.0),
+              padding: const EdgeInsets.all(100.0),
               child: Image.asset(
-                "assets/icons/logo.png",
+                "assets/icons/logo2.png",
                 width: 200,
+                height: 200,
               ),
             ),
-            Text("WELCOME TO ELERNING",
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(
+                "Start or join a video meeting",
                 style: Theme.of(context)
                     .textTheme
                     .headline6!
-                    .copyWith(fontWeight: FontWeight.bold)),
+                    .copyWith(fontWeight: FontWeight.bold),
+              ),
+            ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: SizedBox(
-                width: 235,
-                height: 40,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text("JOIN MEETING"),
+              padding: const EdgeInsets.all(20.0),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  textStyle: const TextStyle(fontSize: 20)
+                      .copyWith(fontWeight: FontWeight.bold),
+                  minimumSize: Size(305, 50),
+                  primary: Colors.blue,
+                  shape: StadiumBorder(),
                 ),
+                onPressed: () {},
+                child: Text("Join a Meeting"),
               ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
-                  width: 125,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text("SIGN IN"),
-                    ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    textStyle: const TextStyle(fontSize: 15)
+                        .copyWith(fontWeight: FontWeight.bold),
+                    minimumSize: Size(150, 50),
+                    primary: Colors.blue,
+                    padding: EdgeInsets.symmetric(horizontal: 35, vertical: 10),
+                    shape: StadiumBorder(),
                   ),
+                  onPressed: () {},
+                  child: Text("Sign In"),
                 ),
-                SizedBox(
-                  width: 125,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text("SIGN UP"),
+                TextButton(
+                    style: TextButton.styleFrom(
+                      textStyle: const TextStyle(fontSize: 15)
+                          .copyWith(fontWeight: FontWeight.bold),
+                      minimumSize: Size(150, 50),
+                      primary: Colors.blue,
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 35, vertical: 10),
+                      shape: StadiumBorder(),
                     ),
-                  ),
-                ),
+                    onPressed: () {},
+                    child: Text("Sign Up")),
               ],
-            ),
+            )
           ],
         ),
       ),
