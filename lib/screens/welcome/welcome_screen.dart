@@ -19,10 +19,11 @@ class WelcomeScreen extends StatelessWidget {
                     .textTheme
                     .headline6!
                     .copyWith(fontWeight: FontWeight.bold)),
-            SizedBox(
-              width: double.infinity,
-              child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 100),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: 235,
+                height: 40,
                 child: ElevatedButton(
                   onPressed: () {},
                   child: Text("JOIN MEETING"),
@@ -32,18 +33,24 @@ class WelcomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text("SIGN IN"),
+                SizedBox(
+                  width: 125,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text("SIGN IN"),
+                    ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text("SIGN UP"),
+                SizedBox(
+                  width: 125,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text("SIGN UP"),
+                    ),
                   ),
                 ),
               ],
