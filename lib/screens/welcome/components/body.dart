@@ -1,6 +1,7 @@
+import 'package:elerning/screens/sign_in/sign_in.dart';
 import 'package:flutter/material.dart';
 
-class WelcomeScreen extends StatelessWidget {
+class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,11 +48,13 @@ class WelcomeScreen extends StatelessWidget {
                     textStyle: const TextStyle(fontSize: 15)
                         .copyWith(fontWeight: FontWeight.bold),
                     minimumSize: Size(150, 50),
-                    primary: Colors.blue,
                     padding: EdgeInsets.symmetric(horizontal: 35, vertical: 10),
                     shape: StadiumBorder(),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SignIn()));
+                  },
                   child: Text("Sign In"),
                 ),
                 TextButton(
@@ -59,12 +62,13 @@ class WelcomeScreen extends StatelessWidget {
                       textStyle: const TextStyle(fontSize: 15)
                           .copyWith(fontWeight: FontWeight.bold),
                       minimumSize: Size(150, 50),
-                      primary: Colors.blue,
                       padding:
                           EdgeInsets.symmetric(horizontal: 35, vertical: 10),
                       shape: StadiumBorder(),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      print("test");
+                    },
                     child: Text("Sign Up")),
               ],
             )

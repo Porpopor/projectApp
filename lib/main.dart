@@ -1,4 +1,4 @@
-import 'package:elerning/screens/welcome/welcome_screen.dart';
+import 'package:elerning/screens/welcome/welcome_screens.dart';
 import 'package:flutter/material.dart';
 
 void main() {
