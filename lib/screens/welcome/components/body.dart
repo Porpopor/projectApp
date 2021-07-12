@@ -24,7 +24,7 @@ class Body extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline6!
-                  .copyWith(fontWeight: FontWeight.bold),
+                  .copyWith(fontWeight: FontWeight.w500),
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
